@@ -13,6 +13,15 @@ fun decimalDigitValue(c: Char): Int {
 }
 
 fun main(args: Array<String>) {
+    val itemss = listOf("apple", "banana", "kiwi")
+    for (item in itemss) {
+        println(item)
+    }
+
+    for (index in itemss.indices) {
+        println("item at $index is ${itemss[index]}")
+    }
+
     val items = setOf("apple", "banana", "kiwi")
     when {
         "orange" in items -> println("juicy")
