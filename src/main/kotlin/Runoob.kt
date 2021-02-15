@@ -12,6 +12,10 @@ class Runoob  constructor(name: String) {  // 类名为 Runoob
         println("Alexa 排名 $alexa")
     }
 
+    class Nested {             // 嵌套类
+        fun foo() = 2
+    }
+
     fun printTest() {
         println("我是类的函数")
     }
@@ -23,4 +27,7 @@ fun main(args: Array<String>) {
     println(runoob.url)
     println(runoob.country)
     runoob.printTest()
+
+    val demo = Runoob.Nested().foo() // 调用格式：外部类.嵌套类.嵌套类方法/属性
+    println(demo)    // == 2
 }
